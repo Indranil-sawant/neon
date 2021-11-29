@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- This example requires Tailwind CSS v2.0+ -->
+<nav class="bg-gray-800">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Heroicon name: outline/menu
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Heroicon name: outline/x
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex-shrink-0 flex items-center">
+            <img class="block lg:hidden h-8 w-auto" src="cov.jpeg" alt="covid-19">
+            <img class="hidden lg:block h-8 w-auto" src="" alt="COVID-19">
+          </div>
+          <div class="hidden sm:block sm:ml-6">
+            <div class="flex space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="index.html" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Dashboard</a>
+  
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">about</a>
+  
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">contacts</a>
+  
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">services</a>
+            </div>
+          </div>
+        </div>
+     
+  
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
+  
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+  
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+  
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+      </div>
+    </div>
+  </nav>
+
+  
+
+<section class="text-gray-600 body-font">
+  <div class="container flex flex-wrap px-5 py-24 mx-auto items-center">
+    <div class="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter Taxidermy</h1>
+      <p class="leading-relaxed text-base">Locavore cardigan small batch roof party blue bottle blog meggings sartorial jean shorts kickstarter migas sriracha church-key synth succulents. Actually taiyaki neutra, distillery gastropub pok pok ugh.</p>
+      <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+    <div class="flex flex-col md:w-1/2 md:pl-12">
+      <h2 class="title-font font-semibold text-gray-800 tracking-wider text-sm mb-3">CATEGORIES</h2>
+      <nav class="flex flex-wrap list-none -mb-1">
+        <li class="lg:w-1/3 mb-1 w-1/2">
+          <a class="text-gray-600 hover:text-gray-800">First Link</a>
+        </li>
+        <li class="lg:w-1/3 mb-1 w-1/2">
+          <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+        </li>
+        <li class="lg:w-1/3 mb-1 w-1/2">
+          <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+        </li>
+        <li class="lg:w-1/3 mb-1 w-1/2">
+          <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+        </li>
+        <li class="lg:w-1/3 mb-1 w-1/2">
+          <a class="text-gray-600 hover:text-gray-800">Fifth Link</a>
+        </li>
+        <li class="lg:w-1/3 mb-1 w-1/2">
+          <a class="text-gray-600 hover:text-gray-800">Sixth Link</a>
+        </li>
+        <li class="lg:w-1/3 mb-1 w-1/2">
+          <a class="text-gray-600 hover:text-gray-800">Seventh Link</a>
+        </li>
+        <li class="lg:w-1/3 mb-1 w-1/2">
+          <a class="text-gray-600 hover:text-gray-800">Eighth Link</a>
+        </li>
+      </nav>
+    </div>
+  </div>
+</section>
+
+
+
+
+ 
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-col">
+    <div class="lg:w-4/6 mx-auto">
+      <div class="rounded-lg h-64 overflow-hidden">
+        <img alt="content" class="object-cover object-center h-full w-full" src="index.jpeg">
+      </div>
+      <div class="flex flex-col sm:flex-row mt-10">
+        <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+          <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div class="flex flex-col items-center text-center justify-center">
+            <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Nalin Saluja</h2>
+            <div class="w-12 h-1 bg-purple-500 rounded mt-2 mb-4"></div>
+            <p class="text-base">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p>
+          </div>
+        </div>
+        <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+          <p class="leading-relaxed text-lg mb-4">The Covid-19 pandemic has crippled the Indian Healthcare System with the previous 2 catastrophic waves, and new challenges and complications were witnessed day by day by the Indian Healthcare system. The Healthcare sector was at the epicenter of the unprecedented pandemic and the crisis cost huge losses, crippling the public segment of the sector. Even though the private sector came to full aid in terms of advance equipment, workforce and isolation wards, supporting the government to fight the crisis, the triggering of the recession was inevitable. The crisis didn’t just dismantle the sector in terms of overburdened staff and scarcity of resources and medication, other services were also disrupted like the OPD footfall and surgeries decreased massively. This ultimately created a major hindrance in the cash flow of the hospitals and caused massive turbulence in the functioning of these hospitals</p>
+          <a href="index.html"text-purple-500 inline-flex items-center">Learn More <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    
+</body>
+</html>
